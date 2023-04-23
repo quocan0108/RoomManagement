@@ -6,8 +6,6 @@ namespace QLPhongTro
 {
     public partial class formMain : Form
     {
-        
-
         public formMain()
         {
             InitializeComponent();
@@ -82,7 +80,7 @@ namespace QLPhongTro
             f.Show();
         }
 
-        //add frmWelcome vào formMain
+        //add childforms vào formMain
         private void formMain_Load(object sender, EventArgs e)
         {
             var f = new frmWelcome();
@@ -98,6 +96,18 @@ namespace QLPhongTro
         private void phòngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var f = new frmPhong();
+            AddForm(f);
+        }
+
+        private void dịchVụToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmDichVu();
+            AddForm(f);
+        }
+
+        private void thuêPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmThuePhong();
             AddForm(f);
         }
     }

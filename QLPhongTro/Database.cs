@@ -11,7 +11,7 @@ namespace QLPhongTro
 {
     public class Database
     { 
-        private string connetionString = @"Server= DESKTOP-2UFH784\SQLEXPRESS;Database= QLPhongTro;Trusted_Connection=True;";
+        private string connetionString = @"Server= DESKTOP-2UFH784\SQLEXPRESS;Database= RoomManagement;Trusted_Connection=True;";
         private SqlConnection conn;
         private DataTable dt;
         private SqlCommand cmd;
