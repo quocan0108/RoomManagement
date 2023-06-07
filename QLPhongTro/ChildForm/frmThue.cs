@@ -21,7 +21,8 @@ namespace QLPhongTro.ChildForm
         }
 
         private List<KhachHang> lstKH;
-        private void pictureBox1_Click(object sender, EventArgs e)
+
+        private void ptbExit_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }
@@ -41,7 +42,12 @@ namespace QLPhongTro.ChildForm
 
             mtbNgayThue.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm");
             mtbNgayTra.Text = DateTime.Now.AddMonths(1).ToString("dd/MM/yyyy HH:mm");
+
+
+
         }
+
+       
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
@@ -79,7 +85,7 @@ namespace QLPhongTro.ChildForm
 
             if (cbbPhong.SelectedIndex < 0)
             {
-                MessageBox.Show("Vui lòng chọn phòng thuê", "RÀNG BUỘC DỮ LIỆU", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng chọn phòng thuê","RÀNG BUỘC DỮ LIỆU",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
 
@@ -92,9 +98,9 @@ namespace QLPhongTro.ChildForm
             int tienVeSinh = int.Parse(txtTienVeSinh.Text);
 
 
-            if (lstKH.Count == 0)
+            if(lstKH.Count == 0)
             {
-                MessageBox.Show("Vui lòng nhập thông tin khách thuê", "Ràng buộc dữ liệu!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng nhập thông tin khách thuê","Ràng buộc dữ liệu!!!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
 
@@ -126,7 +132,7 @@ namespace QLPhongTro.ChildForm
                     value = tienMang.ToString()
                 }
             };
-            if (db.ExeCute("TaoMoiHopDong", lst) != 1)
+            if(db.ExeCute("TaoMoiHopDong", lst) != 1)
             {
                 return;
             }
@@ -155,7 +161,7 @@ namespace QLPhongTro.ChildForm
                     key = "@CSN_Cu",
                     value = csNuoc.ToString()
                 }
-
+               
             };
 
             if (db.ExeCute("TaoChiTietHopDong", lst) != 1)
@@ -208,12 +214,16 @@ namespace QLPhongTro.ChildForm
                 };
 
                 db.ExeCute("ThemKhachHang", lst);
-
-
+               
+                
             }
+          
+                MessageBox.Show("Tạo mới hợp đồng thuê trọ thành công!", "Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Dispose();
+           
 
-            MessageBox.Show("Tạo mới hợp đồng thuê trọ thành công!", "Successfully!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.Dispose();
+
+
         }
 
         private void txtDatCoc_KeyPress(object sender, KeyPressEventArgs e)
@@ -226,7 +236,7 @@ namespace QLPhongTro.ChildForm
             this.Dispose();
         }
 
-        private void btnThemKhachHang_Click(object sender, EventArgs e)
+        private void btnThemKH_Click(object sender, EventArgs e)
         {
             var ho = txtHo.Text.Trim();
             var tendem = txtTenDem.Text.Trim();
@@ -240,17 +250,17 @@ namespace QLPhongTro.ChildForm
 
             if (string.IsNullOrEmpty(ho) || string.IsNullOrEmpty(ten))
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ họ tên khách hàng!", "Ràng buộc dữ liệu!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng nhập đầy đủ họ tên khách hàng!","Ràng buộc dữ liệu!!!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
 
             if (string.IsNullOrEmpty(CMND_CCCD))
             {
-                MessageBox.Show("Vui lòng nhập thông tin CMND/CCCD", "Ràng buộc dữ liệu!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng nhập thông tin CMND/CCCD","Ràng buộc dữ liệu!!!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 return;
             }
 
-            if (string.IsNullOrEmpty(queQuan) || string.IsNullOrEmpty(HKTT))
+            if(string.IsNullOrEmpty(queQuan) || string.IsNullOrEmpty(HKTT))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ HKTT và quê quán", "Ràng buộc dữ liệu!!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -275,6 +285,7 @@ namespace QLPhongTro.ChildForm
 
             txtHo.Text = txtTenDem.Text = txtTen.Text = txtDienThoai.Text = txtCMND.Text = txtQueQuan.Text = txtHKTT.Text = null;
             txtHo.Select();
+
         }
     }
 }

@@ -30,14 +30,14 @@ namespace QLPhongTro.ChildForm
         }
         private void LoadDSDV()
         {
-            
-            var timKiem = txtTimKiem.Text.Trim();
+
+            //var timKiem = txtTimKiem.Text.Trim();
             var lstPra = new List<CustomParameter>()
             {
                 new CustomParameter()
                 {
                     key = "@timKiem",
-                    value = timKiem
+                    value = txtTenDichVu.Text
                 }
             };
 

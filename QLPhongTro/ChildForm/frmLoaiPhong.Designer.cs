@@ -62,14 +62,14 @@
             this.dgvDSLoaiPhong.BackgroundColor = System.Drawing.Color.White;
             this.dgvDSLoaiPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDSLoaiPhong.GridColor = System.Drawing.Color.Gray;
-            this.dgvDSLoaiPhong.Location = new System.Drawing.Point(0, 139);
+            this.dgvDSLoaiPhong.Location = new System.Drawing.Point(-164, 138);
             this.dgvDSLoaiPhong.MultiSelect = false;
             this.dgvDSLoaiPhong.Name = "dgvDSLoaiPhong";
             this.dgvDSLoaiPhong.ReadOnly = true;
             this.dgvDSLoaiPhong.RowHeadersWidth = 62;
             this.dgvDSLoaiPhong.RowTemplate.Height = 33;
             this.dgvDSLoaiPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSLoaiPhong.Size = new System.Drawing.Size(978, 325);
+            this.dgvDSLoaiPhong.Size = new System.Drawing.Size(1140, 325);
             this.dgvDSLoaiPhong.TabIndex = 1;
             this.dgvDSLoaiPhong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSLoaiPhong_CellClick);
             // 
@@ -170,7 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSlateGray;
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(978, 464);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnXoa);

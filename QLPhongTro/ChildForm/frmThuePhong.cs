@@ -18,20 +18,20 @@ namespace QLPhongTro.ChildForm
             InitializeComponent();
         }
 
-        private void btnThueMoi_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             new frmThue().ShowDialog();
             LoadDSThuePhong();
-
         }
 
         private void frmThuePhong_Load(object sender, EventArgs e)
         {
             db = new Database();
-            LoadDSThuePhong();
+            LoadDSThuePhong();           
+
         }
 
-        public void LoadDSThuePhong()
+        private void LoadDSThuePhong()
         {
             List<CustomParameter> lst = new List<CustomParameter>
             {
@@ -44,15 +44,18 @@ namespace QLPhongTro.ChildForm
             dgvThuePhong.AutoGenerateColumns = false;
             var rs = db.SelectData("[LoadDSHopDong]", lst);
             dgvThuePhong.DataSource = db.SelectData("[LoadDSHopDong]", lst);
+
+           
         }
 
-        private void btnTim_Click(object sender, EventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
             LoadDSThuePhong();
         }
 
         private void dgvThuePhong_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+
             if (e.RowIndex >= 0)
             {
                 if (e.ColumnIndex == dgvThuePhong.Columns["btnThanhToan"].Index)
@@ -60,10 +63,10 @@ namespace QLPhongTro.ChildForm
                     var IDHopDong = int.Parse(dgvThuePhong.Rows[e.RowIndex].Cells["ID"].Value.ToString());
                     var CSD_Cu = int.Parse(dgvThuePhong.Rows[e.RowIndex].Cells["CSD_Cu"].Value.ToString());
                     var CSN_Cu = int.Parse(dgvThuePhong.Rows[e.RowIndex].Cells["CSN_Cu"].Value.ToString());
-
-                    new frmChotDienNuoc(IDHopDong, CSD_Cu, CSN_Cu).ShowDialog();
+                 
+                    new frmChotDienNuoc(IDHopDong,CSD_Cu,CSN_Cu).ShowDialog();
                     LoadDSThuePhong();
-                }
+                }                
 
             }
         }

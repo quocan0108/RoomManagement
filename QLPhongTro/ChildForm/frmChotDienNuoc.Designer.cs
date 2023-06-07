@@ -218,6 +218,7 @@
             // grbContent
             // 
             this.grbContent.AutoSize = true;
+            this.grbContent.BackColor = System.Drawing.Color.Teal;
             this.grbContent.Controls.Add(this.btnXacNhan);
             this.grbContent.Controls.Add(this.txtCSN_Moi);
             this.grbContent.Controls.Add(this.label4);

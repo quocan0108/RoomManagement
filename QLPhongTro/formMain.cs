@@ -1,6 +1,8 @@
 ﻿using QLPhongTro.ChildForm;
 using QLPhongTro.Properties;
 using System.ComponentModel;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace QLPhongTro
 {
@@ -108,6 +110,66 @@ namespace QLPhongTro
         private void thuêPhòngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var f = new frmThuePhong();
+            AddForm(f);
+        }
+
+        #region khóa màn hình
+        [DllImport("user32.dll")]
+        public static extern void LockWorkStation();
+        private void LockScreen()
+        {
+            LockWorkStation();
+        }
+        private void khóaMànHìnhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LockScreen();
+        }
+
+        #endregion
+
+        private void thoátToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void phiênBảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Phiên bản 1.0.", "Room Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
+
+        private void bảnQuyềnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bản quyền thuộc sở hữu của Lê Quốc Ân, Nguyễn Quang Sáng, Nguyễn Văn Thắng.", "Room Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void liênHệToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmLienHe();
+            AddForm(f);
+        }
+
+        private void phòngĐangThuêToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmPhongDangThue();
+            AddForm(f);
+        }
+
+        private void phòngTrốngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmPhongTrong();
+            AddForm(f);
+        }
+
+        private void trangChủToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmWelcome();
+            AddForm(f);
+        }
+
+        private void trảPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmTraPhong();
             AddForm(f);
         }
     }

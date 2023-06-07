@@ -60,14 +60,14 @@
             this.dgvPhong.BackgroundColor = System.Drawing.Color.White;
             this.dgvPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPhong.GridColor = System.Drawing.Color.Gray;
-            this.dgvPhong.Location = new System.Drawing.Point(0, 139);
+            this.dgvPhong.Location = new System.Drawing.Point(0, 138);
             this.dgvPhong.MultiSelect = false;
             this.dgvPhong.Name = "dgvPhong";
             this.dgvPhong.ReadOnly = true;
             this.dgvPhong.RowHeadersWidth = 62;
             this.dgvPhong.RowTemplate.Height = 33;
             this.dgvPhong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPhong.Size = new System.Drawing.Size(978, 325);
+            this.dgvPhong.Size = new System.Drawing.Size(979, 325);
             this.dgvPhong.TabIndex = 1;
             this.dgvPhong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPhong_CellClick);
             this.dgvPhong.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPhong_CellDoubleClick);
@@ -77,7 +77,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(164, 84);
+            this.label1.Location = new System.Drawing.Point(151, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 21);
             this.label1.TabIndex = 2;
@@ -86,7 +86,7 @@
             // txtTimKiem
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtTimKiem.Location = new System.Drawing.Point(251, 81);
+            this.txtTimKiem.Location = new System.Drawing.Point(251, 82);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(214, 29);
             this.txtTimKiem.TabIndex = 3;
@@ -96,9 +96,9 @@
             this.btnTim.BackColor = System.Drawing.Color.SlateGray;
             this.btnTim.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnTim.ForeColor = System.Drawing.Color.White;
-            this.btnTim.Location = new System.Drawing.Point(471, 77);
+            this.btnTim.Location = new System.Drawing.Point(471, 82);
             this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(112, 34);
+            this.btnTim.Size = new System.Drawing.Size(111, 33);
             this.btnTim.TabIndex = 4;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = false;
@@ -109,9 +109,9 @@
             this.btnThemMoi.BackColor = System.Drawing.Color.SlateGray;
             this.btnThemMoi.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnThemMoi.ForeColor = System.Drawing.Color.White;
-            this.btnThemMoi.Location = new System.Drawing.Point(589, 77);
+            this.btnThemMoi.Location = new System.Drawing.Point(589, 82);
             this.btnThemMoi.Name = "btnThemMoi";
-            this.btnThemMoi.Size = new System.Drawing.Size(112, 34);
+            this.btnThemMoi.Size = new System.Drawing.Size(111, 33);
             this.btnThemMoi.TabIndex = 4;
             this.btnThemMoi.Text = "Thêm mới";
             this.btnThemMoi.UseVisualStyleBackColor = false;
@@ -122,9 +122,9 @@
             this.btnXoa.BackColor = System.Drawing.Color.SlateGray;
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(707, 77);
+            this.btnXoa.Location = new System.Drawing.Point(707, 82);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(112, 34);
+            this.btnXoa.Size = new System.Drawing.Size(111, 33);
             this.btnXoa.TabIndex = 4;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
@@ -135,7 +135,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 18);
+            this.label2.Location = new System.Drawing.Point(11, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(227, 25);
             this.label2.TabIndex = 5;
@@ -145,8 +145,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSlateGray;
-            this.ClientSize = new System.Drawing.Size(978, 464);
+            this.BackColor = System.Drawing.Color.Teal;
+            this.ClientSize = new System.Drawing.Size(979, 463);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThemMoi);

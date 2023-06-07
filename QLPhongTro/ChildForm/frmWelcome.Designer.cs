@@ -28,29 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(252, 75);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(472, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Chào mừng bạn đến với phần mềm quản lý phòng trọ";
             // 
             // frmWelcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSlateGray;
+            this.BackColor = System.Drawing.Color.Teal;
             this.BackgroundImage = global::QLPhongTro.Properties.Resources.Home;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(978, 464);
-            this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Name = "frmWelcome";
             this.Text = "frmWelcome";
@@ -59,7 +46,5 @@
         }
 
         #endregion
-
-        private Label label1;
     }
 }

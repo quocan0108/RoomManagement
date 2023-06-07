@@ -31,8 +31,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThemMoi = new System.Windows.Forms.Button();
-            this.btnTim = new System.Windows.Forms.Button();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.dgvDV = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtTenDichVu = new System.Windows.Forms.TextBox();
@@ -47,7 +45,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 9);
+            this.label2.Location = new System.Drawing.Point(11, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(234, 25);
             this.label2.TabIndex = 13;
@@ -59,9 +57,9 @@
             this.btnXoa.BackColor = System.Drawing.Color.SlateGray;
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(837, 66);
+            this.btnXoa.Location = new System.Drawing.Point(690, 68);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(112, 34);
+            this.btnXoa.Size = new System.Drawing.Size(111, 33);
             this.btnXoa.TabIndex = 10;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
@@ -73,34 +71,13 @@
             this.btnThemMoi.BackColor = System.Drawing.Color.SlateGray;
             this.btnThemMoi.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnThemMoi.ForeColor = System.Drawing.Color.White;
-            this.btnThemMoi.Location = new System.Drawing.Point(601, 66);
+            this.btnThemMoi.Location = new System.Drawing.Point(454, 68);
             this.btnThemMoi.Name = "btnThemMoi";
-            this.btnThemMoi.Size = new System.Drawing.Size(112, 34);
+            this.btnThemMoi.Size = new System.Drawing.Size(111, 33);
             this.btnThemMoi.TabIndex = 11;
             this.btnThemMoi.Text = "Thêm";
             this.btnThemMoi.UseVisualStyleBackColor = false;
             this.btnThemMoi.Click += new System.EventHandler(this.btnThemMoi_Click);
-            // 
-            // btnTim
-            // 
-            this.btnTim.BackColor = System.Drawing.Color.SlateGray;
-            this.btnTim.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTim.ForeColor = System.Drawing.Color.White;
-            this.btnTim.Location = new System.Drawing.Point(218, 66);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(112, 34);
-            this.btnTim.TabIndex = 12;
-            this.btnTim.Text = "Tìm";
-            this.btnTim.UseVisualStyleBackColor = false;
-            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
-            // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtTimKiem.Location = new System.Drawing.Point(40, 70);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(172, 29);
-            this.txtTimKiem.TabIndex = 9;
             // 
             // dgvDV
             // 
@@ -119,7 +96,7 @@
             this.dgvDV.RowHeadersWidth = 62;
             this.dgvDV.RowTemplate.Height = 33;
             this.dgvDV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDV.Size = new System.Drawing.Size(978, 324);
+            this.dgvDV.Size = new System.Drawing.Size(979, 333);
             this.dgvDV.TabIndex = 7;
             this.dgvDV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDV_CellClick);
             // 
@@ -127,7 +104,7 @@
             // 
             this.dataGridView1.AccessibleName = "";
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(133, 124);
+            this.dataGridView1.Location = new System.Drawing.Point(133, 123);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
@@ -138,7 +115,7 @@
             // 
             this.txtTenDichVu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTenDichVu.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtTenDichVu.Location = new System.Drawing.Point(420, 70);
+            this.txtTenDichVu.Location = new System.Drawing.Point(273, 68);
             this.txtTenDichVu.Name = "txtTenDichVu";
             this.txtTenDichVu.Size = new System.Drawing.Size(175, 29);
             this.txtTenDichVu.TabIndex = 9;
@@ -149,7 +126,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(350, 75);
+            this.label1.Location = new System.Drawing.Point(203, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 21);
             this.label1.TabIndex = 14;
@@ -161,9 +138,9 @@
             this.btnCapNhat.BackColor = System.Drawing.Color.SlateGray;
             this.btnCapNhat.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCapNhat.ForeColor = System.Drawing.Color.White;
-            this.btnCapNhat.Location = new System.Drawing.Point(719, 66);
+            this.btnCapNhat.Location = new System.Drawing.Point(571, 68);
             this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(112, 34);
+            this.btnCapNhat.Size = new System.Drawing.Size(111, 33);
             this.btnCapNhat.TabIndex = 11;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = false;
@@ -173,16 +150,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSlateGray;
-            this.ClientSize = new System.Drawing.Size(978, 464);
+            this.BackColor = System.Drawing.Color.Teal;
+            this.ClientSize = new System.Drawing.Size(979, 463);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.btnThemMoi);
-            this.Controls.Add(this.btnTim);
             this.Controls.Add(this.txtTenDichVu);
-            this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.dgvDV);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmDichVu";
@@ -200,8 +175,6 @@
         private Label label2;
         private Button btnXoa;
         private Button btnThemMoi;
-        private Button btnTim;
-        private TextBox txtTimKiem;
         private DataGridView dgvDV;
         private DataGridView dataGridView1;
         private TextBox txtTenDichVu;

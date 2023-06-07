@@ -58,8 +58,7 @@ namespace QLPhongTro.ChildForm
         }
         
         private void LoadLoaiPhong()
-        {
-            
+        {          
             var dt = db.SelectData("loadDsLoaiPhong");
             cbbLoaiPhong.DataSource= dt;
             cbbLoaiPhong.DisplayMember = "TenLoaiPhong";
@@ -91,6 +90,7 @@ namespace QLPhongTro.ChildForm
             }
 
             var idLoaiPhong = cbbLoaiPhong.SelectedValue.ToString();
+            Console.WriteLine(idLoaiPhong);
             var tenPhong = txtTenPhong.Text.Trim();
             var trangThai = ckbHoatDong.Checked?1:0; 
 
@@ -108,6 +108,8 @@ namespace QLPhongTro.ChildForm
                     {
                         key = "@idLoaiPhong",
                         value = idLoaiPhong
+                        //Console.WriteLine(idLoaiPhong);
+
                     },
                     new CustomParameter()
                     {
@@ -166,7 +168,7 @@ namespace QLPhongTro.ChildForm
                 else
                 {
                     MessageBox.Show("Cập nhật thông tin phòng không thành công", "Failed!", MessageBoxButtons.OK, MessageBoxIcon.Information);//hiện thông báo không thành công
-                    this.Dispose();
+                    
                 }
                 
             }
